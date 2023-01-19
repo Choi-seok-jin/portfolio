@@ -1,0 +1,94 @@
+@charset "utf-8";
+@font-face {
+    font-family: 'DungGeunMo';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/DungGeunMo.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "PowerPixel7";
+    src: url("../font/PowerPixel7-Jy0E.ttf") format(truetype);
+    font-weight: normal;
+}
+@font-face {
+    font-family: "neon";
+    src: url("../font/neon.ttf") format(truetype);
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'GangwonEdu_OTFBoldA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEdu_OTFBoldA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/* 초기값, 공통요소(제목, 버튼, 폰트스타일), 웹폰트 */
+html{
+	scroll-behavior: smooth;
+}
+html, body {
+    width: 100%;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+li {
+    list-style: none;
+}
+body {
+    font-family: 'DungGeunMo';
+    color: #fff;
+    line-height: 1;
+    background-color: black;
+}
+
+/* 공통 스타일 */
+.inner {
+    width: 1440px;
+    margin: 0 auto;
+}
+.title {
+    margin-bottom: 40px;
+}
+.title h3 {
+    font-size: 50px;
+    margin-bottom: 16px;
+}
+.title p {
+    font-size: 18px;
+}
+
+.btn li {
+    height: 40px;
+    line-height: 40px;
+    background-color: #333;
+    color: #fff;
+    padding: 0 18px;
+    border-radius: 40px;
+    display: inline-block;
+}
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+.swiper-button-next {
+    background: url('../img/icons8-arrow-96.png') 0 0 / 100% no-repeat;
+    width: 96px;
+    height: 96px;
+}
+.swiper-button-next::after {
+    display: none;
+}
+.swiper-button-prev {
+    background: url('../img/icons8-arrow-96 (1).png') 0 0 / 100% no-repeat;
+    width: 96px;
+    height: 96px;
+}
+.swiper-button-prev::after {
+    display: none;
+}
