@@ -5,8 +5,29 @@
     font-weight: normal;
     font-style: normal;
 }
-
+@font-face {
+    font-family: "PowerPixel7";
+    src: url("../font/PowerPixel7-Jy0E.ttf") format(truetype);
+    font-weight: normal;
+}
+@font-face {
+    font-family: "neon";
+    src: url("../font/neon.ttf") format(truetype);
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'GangwonEdu_OTFBoldA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEdu_OTFBoldA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 /* 초기값, 공통요소(제목, 버튼, 폰트스타일), 웹폰트 */
+html{
+	scroll-behavior: smooth;
+}
+html, body {
+    width: 100%;
+}
 * {
     margin: 0;
     padding: 0;
@@ -21,8 +42,9 @@ li {
 }
 body {
     font-family: 'DungGeunMo';
-    color: #333;
+    color: #fff;
     line-height: 1;
+    background-color: black;
 }
 
 /* 공통 스타일 */
