@@ -7,7 +7,9 @@
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
     <title>최석진</title>
     <!-- fancybox CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css" integrity="sha512-nNlU0WK2QfKsuEmdcTwkeh+lhGs6uyOxuUs+n+0oXSYDok5qy0EI0lt01ZynHq6+p/tbgpZ7P+yUb+r71wqdXg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css"
+        integrity="sha512-nNlU0WK2QfKsuEmdcTwkeh+lhGs6uyOxuUs+n+0oXSYDok5qy0EI0lt01ZynHq6+p/tbgpZ7P+yUb+r71wqdXg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
 
@@ -16,17 +18,17 @@
 </head>
 
 <body>
-    <header>
+    <header id='top'>
         <div class="inner">
             <h1>
                 <a href="#">최석진</a>
             </h1>
             <nav>
                 <ul>
-                    <li><a href="#">영상편집/모션그래픽</a></li>
-                    <li><a href="#">웹디자인/웹퍼블리싱</a></li>
-                    <li><a href="#">그래픽디자인</a></li>
-                    <li><a href="#">나의소개</a></li>
+                    <li><a href="#cont01">영상편집/모션그래픽</a></li>
+                    <li><a href="#cont02">웹디자인/웹퍼블리싱</a></li>
+                    <li><a href="#cont03">그래픽디자인</a></li>
+                    <li><a href="#cont04">나의소개</a></li>
                 </ul>
             </nav>
             <ul class="right_menu">
@@ -35,15 +37,18 @@
             </ul><!-- .right_menu end -->
         </div><!-- .inner end -->
     </header>
+    <div class="loading">
+        <img src="img/로딩1.gif" alt="" />
+    </div><!-- .loading end -->
     <section class="main_visual">
         <!-- placeholder.com -->
-        <img src="https://via.placeholder.com/1920x960" alt="">
+        <img src="img/Waiting in the snow.gif" alt="">
     </section><!-- .main_visual end -->
-    <section class="video">
+    <section id='cont01' class="video">
         <div class="inner">
             <div class="title">
-                <h3>영상편집/모션그래픽</h3>
-                <p>프리미어프로, 에프터이펙트 등을 사용하여 영상편집/모션그래픽 진행</p>
+                <h3 class="typing">VIDEO EDITING & MOTION GRAPHIC</h3>
+                <p>프리미어프로, 에프터이펙트 등을 사용하여 영상편집/모션그래픽을 진행하였습니다.</p>
             </div><!-- .title end -->
             <ul class="tab_menu">
                 <li class="on">게임</li>
@@ -54,7 +59,8 @@
             </ul><!-- .tab_menu end -->
 
             <div class="list">
-                <div class="list_in on"><!-- 게임 -->
+                <div class="list_in on">
+                    <!-- 게임 -->
                     <!-- Swiper -->
                     <div class="swiper mySwiper">
                         <div class="swiper-wrapper">
@@ -80,8 +86,8 @@
                                         <dd>프리미어프로, 에프터이펙트, 포토샵, 일러스트레이터</dd>
                                     </dl>
                                     <ul class="btn">
-                                        <li><a href="#">유튜브이동</a></li>
-                                        <li><a href="#">기획서보기</a></li>
+                                        <li><a href="#">YOUTUBE</a></li>
+                                        <li><a href="#">PROPOSAL</a></li>
                                     </ul><!-- .btn end -->
                                 </div><!-- .info end -->
                             </div><!-- .swiper-slide / 1 -->
@@ -118,7 +124,8 @@
                         <div class="swiper-pagination"></div>
                     </div>
                 </div><!-- .list_in end 1 / 게임 -->
-                <div class="list_in"><!-- 홍보영상 -->
+                <div class="list_in">
+                    <!-- 홍보영상 -->
                     <!-- Swiper -->
                     <div class="swiper mySwiper">
                         <div class="swiper-wrapper">
@@ -185,11 +192,11 @@
             </div><!-- .list end -->
         </div><!-- .inner end -->
     </section><!-- .video end -->
-    <section class="web">
+    <section id='cont02' class="web">
         <div class="inner">
             <div class="title">
-                <h3>웹디자인/웹퍼블리싱</h3>
-                <p>포토샵, 일러스트레이터, 비주얼스튜디오코드를 이용하여 웹사이트 구현</p>
+                <h3>WEB DESIGN & WEB PUBLISHING</h3>
+                <p>포토샵, 일러스트레이터, 비쥬얼 스튜디오 코드를 사용하여 구현하였습니다.</p>
             </div><!-- .title end -->
             <div class="list">
                 <div class="item">
@@ -207,11 +214,11 @@
                             <dt>사용언어</dt>
                             <dd>html, css</dd>
                         </dl>
-                        <ul class="btn">
-                            <li><a href="sub/project1/index.html" target="_blank">제작사이트보기</a></li>
-                            <li><a href="#">기획서보기</a></li>
-                        </ul><!-- .btn end -->
                     </div><!-- .info end -->
+                    <ul class="btn">
+                        <li><a href="#">WEBSITE</a></li>
+                        <li><a href="#">PROPOSAL</a></li>
+                    </ul><!-- .btn end -->
                 </div><!-- .item end / 1 -->
                 <div class="item">
                     <figure>
@@ -228,24 +235,28 @@
                             <dt>사용언어</dt>
                             <dd>html, css</dd>
                         </dl>
-                        <ul class="btn">
-                            <li><a href="sub/project2/index.html" target="_blank">제작사이트보기</a></li>
-                            <li><a href="#">기획서보기</a></li>
-                        </ul><!-- .btn end -->
                     </div><!-- .info end -->
+                    <ul class="btn">
+                        <li><a href="sub/project2/index.html" target="_blank">WEBSITE</a></li>
+                        <li><a href="sub/travel/process.html" target="_blank">PROPOSAL</a></li>
+                    </ul><!-- .btn end -->
                 </div><!-- .item end / 2 -->
             </div><!-- .list end -->
         </div><!-- .inner end -->
     </section><!-- .web end -->
-    <section class="graphic">
+    <section id='cont03' class="graphic">
         <div class="inner">
             <div class="title">
-                <h3>그래픽디자인</h3>
+                <h3>GRAPHIC DESIGN</h3>
                 <p>2D, 3D그래픽을 포토샵, 일러스트레이터를 이용하여 디자인을 제작하였습니다.</p>
             </div><!-- .title end -->
             <div class="list">
                 <div class="item">
                     <a href="https://source.unsplash.com/juHayWuaaoQ/1500x1000" data-fancybox="images">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
                         <img src="img/cake03.jpg" />
                         <div class="info">
                             <h4>크리스마스 이벤트</h4>
@@ -255,6 +266,10 @@
                 </div><!-- .item end / 1 -->
                 <div class="item">
                     <a href="https://source.unsplash.com/juHayWuaaoQ/1500x1000" data-fancybox="images">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
                         <img src="img/event01.jpg" />
                         <div class="info">
                             <h4>신혼침구 할인이벤트</h4>
@@ -264,6 +279,10 @@
                 </div><!-- .item end / 1 -->
                 <div class="item">
                     <a href="https://source.unsplash.com/juHayWuaaoQ/1500x1000" data-fancybox="images">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
                         <img src="img/travel01.jpg" />
                         <div class="info">
                             <h4>하와이 항공권</h4>
@@ -273,6 +292,10 @@
                 </div><!-- .item end / 1 -->
                 <div class="item">
                     <a href="https://source.unsplash.com/juHayWuaaoQ/1500x1000" data-fancybox="images">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
                         <img src="img/토끼애니메이션.gif" />
                         <div class="info">
                             <h4>토끼 애니메이션</h4>
@@ -282,6 +305,10 @@
                 </div><!-- .item end / 1 -->
                 <div class="item">
                     <a href="https://source.unsplash.com/juHayWuaaoQ/1500x1000" data-fancybox="images">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
                         <img src="img/꽃이벤트.png" />
                         <div class="info">
                             <h4>화장품 효능 광고</h4>
@@ -291,6 +318,10 @@
                 </div><!-- .item end / 5 -->
                 <div class="item">
                     <a href="https://source.unsplash.com/juHayWuaaoQ/1500x1000" data-fancybox="images">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
                         <img src="img/던킨도넛.png" />
                         <div class="info">
                             <h4>던킨도넛 이벤트</h4>
@@ -300,6 +331,10 @@
                 </div><!-- .item end / 2 -->
                 <div class="item">
                     <a href="https://source.unsplash.com/juHayWuaaoQ/1500x1000" data-fancybox="images">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
                         <img src="img/배스킨라빈스.png" />
                         <div class="info">
                             <h4>배스킨라빈스 메뉴</h4>
@@ -309,6 +344,10 @@
                 </div><!-- .item end / 3 -->
                 <div class="item">
                     <a href="https://source.unsplash.com/juHayWuaaoQ/1500x1000" data-fancybox="images">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
                         <img src="img/이케아이벤트.png" />
                         <div class="info">
                             <h4>이케아 이벤트</h4>
@@ -320,7 +359,7 @@
             </div><!-- .list end -->
         </div><!-- .inner end -->
     </section><!-- .graphic end -->
-    <section class="profile">
+    <section id='cont04' class="profile">
         <div class="inner">
             <div class="title">
                 <h3>나의소개</h3>
@@ -328,7 +367,7 @@
             </div><!-- .title end -->
             <div class="list">
                 <figure>
-                    <img src="https://via.placeholder.com/400" alt=""/>
+                    <img src="https://via.placeholder.com/400" alt="" />
                 </figure>
                 <div class="info">
                     <ul>
@@ -341,14 +380,14 @@
                     </ul>
                     <ul>
                         <li><strong>경력, 자격증</strong></li>
-                        <li>어디서 무엇을 하였는가?<br/>
+                        <li>어디서 무엇을 하였는가?<br />
                             자격증은 무엇이 있는가?
                         </li>
                     </ul>
                     <ul>
                         <li><strong>교육</strong></li>
-                        <li>[멀티미디어콘텐츠제작]영상편집&콘텐츠제작<br/>
-                        (프리미어, 에펙, 시네마4D)</li>
+                        <li>[멀티미디어콘텐츠제작]영상편집&콘텐츠제작<br />
+                            (프리미어, 에펙, 시네마4D)</li>
                     </ul>
                     <ul class="skill">
                         <li>#영상편집</li>
@@ -374,16 +413,38 @@
             <li><a href="#" download>지원서 다운로드</a></li>
         </ul>
         <p>COPYRIGHT 2023. 디자이너 최석진. ALL RIGHTS RESERVED.</p>
-        <p>본 사이트는 개인 포트폴리오 사이트로 제작되어 상업적 목적이 아닙니다.<br/>
-        사용된 일부 이미지 및 폰트 등은 별도의 출처가 있음을 밝힙니다.</p>
+        <p>본 사이트는 개인 포트폴리오 사이트로 제작되어 상업적 목적이 아닙니다.<br />
+            사용된 일부 이미지 및 폰트 등은 별도의 출처가 있음을 밝힙니다.</p>
     </footer>
+    <section class="contain">
+        <div class="container">
+            <div class="pacman"></div>
+            <div class="path"></div>
+            <div class="path"></div>
+            <div class="path"></div>
+            <div class="path"></div>
+            <div class="path"></div>
+            <div class="path"></div>
+            <div class="path"></div>
+            <div class="path"></div>
+            <div class="path"></div>
+            <div class="path"></div>
+            <div class="path"></div>
+            <div class="path"></div>
+            <div class="path"></div>
+            <div class="path"></div>
+            <div class="path"></div>
+        </div>
+    </section><!-- .contain end -->
     <!-- cdnjs.com / 제이쿼리 라이브러리 -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
         integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    
+
     <!-- fancybox JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"
+        integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
