@@ -5,334 +5,355 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>새미네부엌</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        li {
-            list-style: none;
-        }
-
-        a {
-            text-decoration: none;
-            color: inherit;
-        }
-
-        body {
-            color: #333;
-            line-height: 1;
-        }
-        
-        header {
-            height: 100px;
-        }
-
-        header .inner {
-            width: calc(100% - 180px);
-            height: 100%;
-            margin: 0 auto;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        header .inner ul {
-            display: flex;
-            align-items: center;
-        }
-        header .inner nav ul li {
-            margin: 0 30px;
-        }
-        header .inner nav ul li a {
-            display: flex;
-            align-items: center;
-        }
-        header .inner .right_menu li {
-            display: flex;
-            align-items: center;
-        }
-        header .inner .right_menu li:nth-child(1) {
-            margin-right: 20px;
-        }
-        header .inner .right_menu li img {
-            width: 40px;
-        } 
-
-        /* ⚽💎.main_visual start */
-        .main_visual {
-            width: calc(100% - 180px);
-            margin: 0 auto;
-        }
-        .main_visual img {
-            width: 100%;
-        }
-
-        /* 🎭.cont01 start */
-        .cont01 .inner .list .item div ul li {
-            display: inline-block;
-            font-size: 14px;
-            margin-right: 40px;
-            
-        }
-        .cont01 .inner .list .item div ul li img {
-            vertical-align: middle;
-            /* 인라인요소가 있을 때 수직정렬
-            inline,
-            display:inline,
-            display:inline-block */
-        }
-        .cont01 .inner .list .item div ul li span {
-            vertical-align: middle;
-        }
-        .cont01 .inner .list .item div ul li:nth-child(1) img {
-            width: 15px;
-            vertical-align: middle;
-        }
-        .cont01 .inner .list .item div ul li:nth-child(2) img {
-            width: 18px;
-        }
-        .cont01 {
-            padding: 80px 0;
-        }
-        .cont01 .inner {
-            width: calc(100% - 480px);
-            margin: 0 auto;
-        }
-        
-        .cont01 .inner h3 {
-            margin-bottom: 40px;
-            font-size: 24px;
-        }
-        .cont01 .inner .list {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-        }
-        .cont01 .inner .list .item {
-            width: 340px;
-            margin-bottom: 50px;
-        }
-        .cont01 .inner .list .item:hover figure img {
-            transform: scale(1.2);
-            /* 선택자 확대 1.2배 */
-        }
-        .cont01 .inner .list .item div {
-            margin: 0 12px;
-            line-height: 25px;
-        }
-        .cont01 .inner .list .item figure {
-            width: 340px;
-            height: 340px;
-            overflow: hidden;
-            border-radius: 20px;
-        }
-        .cont01 .inner .list .item figure img {
-            width: 100%;
-            transition: 0.5s;
-        }
-        .cont01 .inner .list .item div h4 {
-            margin: 20px auto 15px;
-            font-size: 20px;
-        }
-        .cont01 .inner .list .item div p {
-            margin-bottom: 35px;
-            font-size: 18px;
-        }
-    </style>
+    <title>오리온</title>
+    <link rel="stylesheet" href="css/오리온.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    
 </head>
 
 <body>
-    <header>
-        <div class="inner">
-            <h1>
-                <a href="#">
-                    <img src="자료/semie-cooking-logo.svg" alt="로고이미지" />
-                </a>
-            </h1>
-            <nav>
+    <section class="title">
+        <div>
+            <a href="#"><img src="자료/logo.png" alt="메인로고" /></a>
+        </div>
+        <ul>
+            <li class="active"><a href="#">회사소개</a>
                 <ul>
-                    <li><a href="#">요리 상담소</a></li>
-                    <li><a href="#">요리법 연구소</a></li>
-                    <li><a href="#">요리해요</a></li>
-                    <li><a href="#">맛있는 추억을 그리다</a></li>
-                    <li><a href="#"><img src="자료/semie-wow.svg" alt="wow"/>이벤트</a></li>
+                    <li><a href="#">오리온</a></li>
+                    <li><a href="#">오리온소개</a></li>
+                    <li><a href="#">경영방침</a></li>
+                    <li><a href="#">CI 소개</a></li>
+                    <li><a href="#">회사소개서</a></li>
                 </ul>
-            </nav>
-            <ul class="right_menu">
-                <li><a href="#"><img src="자료/icons8-수색-48.png" alt="돋보기"/></a></li>
-                <li><a href="#"><img src="자료/icons8-성별-중립-사용자-32.png" alt="사용자"/></a></li>
-            </ul><!-- .right_menu end -->
-        </div><!-- .inner end -->
-    </header>
+            </li>
+            <li class="active"><a href="#">브랜드소개</a>
+                <ul>
+                    <li><a href="#">브랜드</a></li>
+                    <li><a href="#">제과</a></li>
+                    <li><a href="#">닥터유</a></li>
+                    <li><a href="#">마켓오네이처</a></li>
+                    <li><a href="#">바이오</a></li>
+                </ul>
+            </li>
+            <li class="active"><a href="#">윤리경영</a>
+                <ul>
+                    <li><a href="#">개요</a></li>
+                    <li><a href="#">윤리경영 체계</a></li>
+                    <li><a href="#">제도/시스템</a></li>
+                    <li><a href="#">주요활동</a></li>
+                    <li><a href="#">부패방지</a></li>
+                </ul>
+            </li>
+            <li class="active"><a href="#">투자정보</a>
+                <ul>
+                    <li><a href="#">주식정보</a></li>
+                    <li><a href="#">주가정보</a></li>
+                    <li><a href="#">주주구성</a></li>
+                    <li><a href="#">배당정보</a></li>
+                </ul>
+            </li>
+            <li class="active"><a href="#">뉴스룸</a>
+                <ul>
+                    <li><a href="#"></a></li>
+                    <li><a href="#">새소식</a></li>
+                    <li><a href="#">이벤트</a></li>
+                    <li><a href="#">미디어</a></li>
+                    <li><a href="#">보도자료</a></li>
+                </ul>
+            </li>
+            <li class="active"><a href="#">고객센터</a>
+                <ul>
+                    <li><a href="#">상담페이지</a></li>
+                    <li><a href="#">상담접수</a></li>
+                    <li><a href="#">접수내역 조회</a></li>
+                    <li><a href="#">고객의 소리</a></li>
+                    <li><a href="#">자주묻는 질문</a></li>
+                </ul>
+            </li>
+        </ul>
+        <div>
+            <p><a href="#">English</a></p>
+            <a href="#"><img src="자료/검색(검정).png" alt="검색"></a>
+            <a href="#"><img src="자료/메뉴(검정).png" alt="메뉴"></a>
+        </div>
+        <div class="bg"></div>
+    </section><!-- .title end -->
+    <section class="slide01">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <p><span>닥터유</span>가 찾은<br /><span>제주도</span>의 건강한 물</p>
+                    <img src="자료/메인포스터1.png" alt="메인포스터1" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="자료/메인포스터2.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="자료/메인포스터3.jpg" alt="">
+                    <p>더 건강하게 더 맛있게<br />원물 그대로 담은 자연한끼<br /><span>'마켓오네이처'</span></p>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section><!-- .slide01 end -->
 
-    <section class="main_visual">
-        <img src="자료/92138971wfli.jpg" alt="나를 즐겁게 한 요리"/>
-    </section><!-- .main_visual end -->
-    
+    <div class="cont_title">
+        <h3>윤리경영</h3>
+        <p>오리온은 지속적인 성장과 기업의 사회적 책임을 다하기 위해 노력합니다</p>
+    </div><!-- .cont_title end 1 -->
     <section class="cont01">
-        <div class="inner">
-            <h3>우리 함께 요리해볼까요?</h3>
-            <div class="list">
-                <div class="item">
-                    <figure>
-                        <img src="자료/음식1.png" alt="음식1">
-                    </figure>
-                    <div>
-                        <h4>스트레스가 날아가는 순간!</h4>
-                        <p>찌릿! 매콤얼얼 마라탕과 마라샹궈</p>
-                        <ul>
-                            <li>
-                                <img src="자료/icons8-하트-30.png" alt="하트">
-                                <span>22</span>
-                            </li>
-                            <li>
-                                <img src="자료/icons8-이야기-48.png" alt="댓글">
-                                <span>4</span>
-                            </li>
-                        </ul>
-                    </div>
-                </div><!-- .item 1 end -->
-                <div class="item">
-                    <figure>
-                        <img src="자료/음식2.png" alt="음식2">
-                    </figure>
-                    <div>
-                        <h4>추운 겨울 생각나는 뜨끈~한 국물</h4>
-                        <p>바다향 가득 대구지리탕</p>
-                        <ul>
-                            <li>
-                                <img src="자료/icons8-하트-30.png" alt="하트">
-                                <span>5</span>
-                            </li>
-                            <li>
-                                <img src="자료/icons8-이야기-48.png" alt="댓글">
-                                <span>1</span>
-                            </li>
-                        </ul>
-                    </div>
-                </div><!-- .item 2 end -->
-                <div class="item">
-                    <figure>
-                        <img src="자료/음식3.png" alt="음식3">
-                    </figure>
-                    <div>
-                        <h4>김장철, 남은 배추가 있다면?</h4>
-                        <p>취향따라 2가지 수육</p>
-                        <ul>
-                            <li>
-                                <img src="자료/icons8-하트-30.png" alt="하트">
-                                <span>17</span>
-                            </li>
-                            <li>
-                                <img src="자료/icons8-이야기-48.png" alt="댓글">
-                                <span>9</span>
-                            </li>
-                        </ul>
-                    </div>
-                </div><!-- .item 3 end -->
-                <div class="item">
-                    <figure>
-                        <img src="자료/음식4.png" alt="음식4">
-                    </figure>
-                    <div>
-                        <h4>육지채소로 건강한 집밥 </h4>
-                        <p>담백하게 또는 얼큰하게! 두 가지 뭇국</p>
-                        <ul>
-                            <li>
-                                <img src="자료/icons8-하트-30.png" alt="하트">
-                                <span>13</span>
-                            </li>
-                            <li>
-                                <img src="자료/icons8-이야기-48.png" alt="댓글">
-                                <span>2</span>
-                            </li>
-                        </ul>
-                    </div>
-                </div><!-- .item 4 end -->        
-            </div><!-- .list 1 end -->
-            <div class="list">
-                <div class="item">
-                    <figure>
-                        <img src="자료/음식5.png" alt="음식5">
-                    </figure>
-                    <div>
-                        <h4>지구를 위해 청소해요</h4>
-                        <p>달큰향긋 토마토바질전</p>
-                        <ul>
-                            <li>
-                                <img src="자료/icons8-하트-30.png" alt="하트">
-                                <span>14</span>
-                            </li>
-                            <li>
-                                <img src="자료/icons8-이야기-48.png" alt="댓글">
-                                <span>5</span>
-                            </li>
-                        </ul>
-                    </div>
-                </div><!-- .item 5 end -->
-                <div class="item">
-                    <figure>
-                        <img src="자료/음식6.png" alt="음식6">
-                    </figure>
-                    <div>
-                        <h4>손님 초대 요리는 이렇게, 집들이 음식!</h4>
-                        <p>스테이크와 사이드 누른알감자</p>
-                        <ul>
-                            <li>
-                                <img src="자료/icons8-하트-30.png" alt="하트">
-                                <span>11</span>
-                            </li>
-                            <li>
-                                <img src="자료/icons8-이야기-48.png" alt="댓글">
-                                <span>2</span>
-                            </li>
-                        </ul>
-                    </div>
-                </div><!-- .item 6 end -->
-                <div class="item">
-                    <figure>
-                        <img src="자료/음식7.png" alt="음식7">
-                    </figure>
-                    <div>
-                        <h4>배달요리 이렇게 변신!</h4>
-                        <p>돌돌말아 치킨 스낵랩</p>
-                        <ul>
-                            <li>
-                                <img src="자료/icons8-하트-30.png" alt="하트">
-                                <span>15</span>
-                            </li>
-                            <li>
-                                <img src="자료/icons8-이야기-48.png" alt="댓글">
-                                <span>2</span>
-                            </li>
-                        </ul>
-                    </div>
-                </div><!-- .item 7 end -->
-                <div class="item">
-                    <figure>
-                        <img src="자료/음식8.png" alt="음식8">
-                    </figure>
-                    <div>
-                        <h4>따뜻한 음식이 생각난다면? </h4>
-                        <p>따뜻구수 된장수제비</p>
-                        <ul>
-                            <li>
-                                <img src="자료/icons8-하트-30.png" alt="하트">
-                                <span>17</span>
-                            </li>
-                            <li>
-                                <img src="자료/icons8-이야기-48.png" alt="댓글">
-                                <span>3</span>
-                            </li>
-                        </ul>
-                    </div>
-                </div><!-- .item 8 end -->
-            </div><!-- .list 2 end -->
-        </div> <!-- .inner end -->
+        <div class="swiper mySwiper1">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="cont01_banner">
+                        <figure>
+                            <img src="자료/윤리경영.jpg" alt="윤리경영" />
+                        </figure>
+                        <div>
+                            <h4>윤리경영 도입</h4>
+                            <p>오리온그룹은 2015년 「윤리경영」을
+                                주요 경영방침으로 선포하고
+                                준법과 윤리에 기반한
+                                경영활동을 통하여 지속적인 성장과 기업의
+                                사회적 책임을 다하기 위해 전 법인이 함께 노력합니다.</p>
+                        </div>
+                    </div><!-- .cont01_banner end -->
+                </div>
+                <div class="swiper-slide">
+                    <div class="cont01_banner">
+                        <figure>
+                            <img src="자료/인권경영.jpg" alt="인권경영" />
+                        </figure>
+                        <div>
+                            <h4>인권경영</h4>
+                            <p>모든 임직원을 국적, 인종, 성별, 연령, 학력, 출신지역, 장애 등에 관계없이 공정하게 대우하여 직장내 괴롭힘, 성차별, 성희롱이 없는 직장내 문화를 조성하기
+                                위해 노력하고 있습니다.</p>
+                        </div>
+                    </div><!-- .cont01_banner end -->
+                </div>
+                <div class="swiper-slide">
+                    <div class="cont01_banner">
+                        <figure>
+                            <img src="자료/고객만족.jpg" alt="고객만족" />
+                        </figure>
+                        <div>
+                            <h4>고객만족</h4>
+                            <p>다양한 채널을 통해 고객의 소리를 접수하여 이를 제품에 반영하고 있습니다. 고객의 의견은 사소한 것들까지 놓치지 않고 공유하며, 이를 신제품 개발 및 제품
+                                품질향상에 적극 반영하여 고객의 만족도를 높이도록 지속적으로 노력합니다.</p>
+                        </div>
+                    </div><!-- .cont01_banner end -->
+                </div>
+                <div class="swiper-slide">
+                    <div class="cont01_banner">
+                        <figure>
+                            <img src="자료/사회공헌.jpg" alt="사회공헌" />
+                        </figure>
+                        <div>
+                            <h4>사회공헌</h4>
+                            <p>성장에 기반한 지속적인 사회공헌활동을 바탕으로 사회적 책임을 다하기 위해 노력합니다. 전 법인이 ‘정(情) 나눔’이라는 그룹 공통 테마 하에 업과 연계한
+                                사회공헌활동을 전개하여 진행하고 있습니다.</p>
+                        </div>
+                    </div><!-- .cont01_banner end -->
+                </div>
+
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
     </section><!-- .cont01 end -->
+    <section class="cont02">
+        <div class="cont_title">
+            <h3>제품소개</h3>
+            <p>오리온이 가장 정직한 마음으로 만든 제품들을 소개합니다</p>
+            <ul>
+                <li><span>신제품</span></li>
+                <li><span>스낵</span></li>
+                <li><span>파이</span></li>
+                <li><span>비스킷</span></li>
+                <li><span>캔디</span></li>
+                <li><span>초콜릿</span></li>
+                <li><span>껌</span></li>
+                <li><span>기타 브랜드</span></li>
+            </ul>
+        </div><!-- .cont_title end 2 -->
+        <div class="swiper mySwiper2">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="cont02_banner">
+                        <figure>
+                            <img src="자료/파이1.png" alt="">
+                        </figure>
+                        <div>
+                            <div>
+                                <h4>오리온 초코파이情</h4>
+                                <p>초콜릿, 비스킷, 마시멜로의 균형잡힌 달콤함!</p>
+                                <p>쫀득하고 폭신한 마시멜로에는 지방이 0%!</p>
+                                <p><a href="#">자세히 보기</a></p>
+                            </div>
+                        </div>
+                    </div><!-- .cont02_banner end -->
+                </div><!-- .swiper-slide end -->
+                <div class="swiper-slide">
+                    <div class="cont02_banner">
+                        <figure>
+                            <img src="자료/파이2.jpg" alt="">
+                        </figure>
+                        <div>
+                            <div>
+                                <h4>오리온 카스타드</h4>
+                                <p>계란을 듬뿍 넣어 촉촉한 식감!</p>
+                                <p>부드러운 크림이 듬뿍!</p>
+                                <p><a href="#">자세히 보기</a></p>
+                            </div>
+                        </div>
+                    </div><!-- .cont02_banner end -->
+                </div><!-- .swiper-slide end -->
+                <div class="swiper-slide">
+                    <div class="cont02_banner">
+                        <figure>
+                            <img src="자료/파이3.png" alt="">
+                        </figure>
+                        <div>
+                            <div>
+                                <h4>참붕어빵</h4>
+                                <p>빵 속에 쫀득~한 찰떡이 쏘옥~!</p>
+                                <p>오븐에서 천천히 구워 촉촉하고 부드러워요~</p>
+                                <p><a href="#">자세히 보기</a></p>
+                            </div>
+                        </div>
+                    </div><!-- .cont02_banner end -->
+                </div><!-- .swiper-slide end -->
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+    </section><!-- .cont02 end -->
+    <section class="cont03">
+        <div class="cont_title">
+            <h3>뉴스룸</h3>
+        </div><!-- .cont_title end 3 -->
+        <figure>
+            <div>
+                <a href="#"><img src="자료/뉴스1.jpg" alt="뉴스1"></a>
+                <p>충청남도 및 농협과 '농산물 공급확대 상생협력을 위한 업무협약' 체결</p>
+            </div>
+            <div>
+                <a href="#"><img src="자료/뉴스2.jpg" alt="뉴스2"></a>
+                <p>난치성 치과질환 치료제 개발 기업 (주)하이센스바이오와 합작투자 계약 체결</p>
+            </div>
+        </figure>
+        <figure class="event">
+            <!-- <a href="#"><p>이벤트 더보기</p></a> -->
+            <a href="#"><img src="자료/이벤트배너1.png" alt="이벤트배너1" /></a>
+        </figure>
+    </section><!-- .cont03 end -->
+
+    <section class="futter">
+        <div>
+            <div class="futter_cont01">
+                <img src="자료/f_logo.png" alt="futter_로고" />
+                <ul>
+                    <li><a href="#">고객문의</a></li>
+                    <li><a href="#">신규거래 제안</a></li>
+                    <li><a href="#">채용</a></li>
+                </ul>
+            </div><!-- .futter_cont01 end -->
+            <div class="futter_cont02">
+                <div>
+                    <ul>
+                        <li>(주)오리온 서울 용산구 백범로 90다길 13</li>
+                        <li><span>사업자등록번호</span> 709-81-00727</li>
+                        <li><span>대표이사 이승준</span></li>
+                    </ul>
+                    <ul>
+                        <li><span>전화번호</span> 02.710.6000</li>
+                        <li><span>고객센터</span> 080.023.5700(수신자 부담)</li>
+                        <li><span>제품 구입문의</span> 02.710.6033</li>
+                    </ul>
+                </div>
+                <ul>
+                    <li><span><a href="#">법적고지</a></span></li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li><span><a href="#">이메일무단수집거부</a></span></li>
+                    <li><span><a href="#">오시는 길</a></span></li>
+                </ul>
+            </div><!-- .futter_cont02 end -->
+            <div class="futter_cont03">
+                <p><span>COPYRIGHT ORION CORP.ALL RIGHT RESERVED</span></p>
+                <div>
+                    <a href="#"><img src="자료/f_menu1.png" alt="메뉴1"></a>
+                    <a href="#"><img src="자료/f_menu2.png" alt="메뉴2"></a>
+                    <a href="#"><img src="자료/f_menu3.png" alt="메뉴3"></a>
+                    <a href="#"><img src="자료/f_menu4.png" alt="메뉴4"></a>
+                    <a href="#">
+                        <p>패밀리 사이트</p>
+                    </a>
+                </div>
+            </div><!-- .futter_cont03 end -->
+        </div>
+    </section><!-- .futter end -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+        integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+            effect: "fade",
+        });
+        var swiper = new Swiper(".mySwiper1", {
+            spaceBetween: 30,
+            centeredSlides: true,
+            speed: 1000,
+            loop: true,
+            autoplay: {
+                delay: 7000,
+                disableOnInteraction: false,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: false,
+            },
+        });
+        var swiper = new Swiper(".mySwiper2", {
+            cssMode: true,
+            autoplay: {
+                delay: 7000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            mousewheel: true,
+            keyboard: true,
+        });
+
+        $('.active').mouseenter(function () {
+            //$('.depth02').slideDown();
+            $(this).children('ul').stop().slideDown(500);
+            $('.bg').stop().slideDown(400);
+
+        });
+        $('.active', 'ul').mouseleave(function () {
+            $('.active').children('ul').stop().slideUp(400);
+            $('.bg').stop().slideUp(500);
+        });
+    </script>
+
 </body>
 
 </html>
