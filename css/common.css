@@ -22,8 +22,12 @@
     font-style: normal;
 }
 /* 초기값, 공통요소(제목, 버튼, 폰트스타일), 웹폰트 */
-html{
-	scroll-behavior: smooth;
+html {
+    -ms-overflow-style: none; /* 인터넷 익스플로러 */
+    scrollbar-width: none; /* 파이어폭스 */
+}
+html::-webkit-scrollbar {
+    display: none; /* 크롬, 사파리, 오페라, 엣지 */
 }
 html, body {
     width: 100%;
